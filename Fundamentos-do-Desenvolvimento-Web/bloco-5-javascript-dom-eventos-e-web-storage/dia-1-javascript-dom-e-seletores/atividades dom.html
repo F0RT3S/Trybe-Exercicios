@@ -56,8 +56,7 @@
         */
         // 1 -
         function changeText () {
-            document.querySelectorAll('p')[1].innerHTML = 'Vamo em frente, sempre.';
-            console.log('teste');
+            document.getElementsByTagName('p')[1].innerHTML = 'Vamo em frente, sempre.';
         }
         changeText();
 
@@ -90,6 +89,16 @@
             tituloMaiusculo.innerText = tituloMaiusculo.innerText.toUpperCase();
         }
         maiusculo();
+
+        // 6 -
+        function allParagraphs () {
+            let imprimirParagrafo = document.getElementsByTagName('p')
+            for (let index = 0; index < imprimirParagrafo.length; index += 1) {
+            console.log(imprimirParagrafo[index].innerText);
+            }
+        }
+        allParagraphs();
+
 
     </script>
   </body>
