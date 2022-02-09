@@ -56,20 +56,26 @@
         */
         // 1 -
         function changeText () {
-            document.querySelectorAll('p')[1].innerHTML = 'Vamo em frente, sempre';
+            document.querySelectorAll('p')[1].innerHTML = 'Vamo em frente, sempre.';
             console.log('teste');
         }
         changeText();
 
 
-        // 2-
+        // 2 -
         function changeColor () {
             let corQuadrado = document.getElementsByClassName('main-content')[0];
             corQuadrado.style.background = "rgb(76,164,109)";
         }
         changeColor();
-        
 
+
+        // 3 - 
+        function changeColorWhite () {
+            let quadradoBranco = document.getElementsByClassName('center-content')[0];
+            quadradoBranco.style.background = "rgb(255,255,255)";
+        }
+        changeColorWhite();
 
     </script>
   </body>
